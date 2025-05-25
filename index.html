@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>DoRi</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="margin-bottom: 2rem">محاسبه گر دلار ـ ریال</h1>
+
+      <div class="getPrice">
+        <!-- get Exchange rate -->
+        <label for="rate">لطفا نرخ دلار مد نظر را وارد کنید (ریال)</label>
+        <p class="default-rate">نرخ پیشفرض : 800,000 ریال</p>
+        <input
+          class="user-rate input-style"
+          type="number"
+          name="dollar-rate"
+          id="rate"
+        />
+      </div>
+
+      <div class="content">
+        <!-- get price -->
+        <h2 style="margin: 15px 0">مبلغ جهت تبدیل</h2>
+
+        <div class="change-container">
+          <div class="content-container">
+            <div class="toRial box-style">
+              <!-- rial-price -->
+              <label for="rial-price">ریال به دلار</label>
+              <input
+                class="user-rial input-style"
+                type="number"
+                id="rial-price"
+              />
+            </div>
+            <div class="toDollar box-style">
+              <!-- dollar price -->
+              <label for="dollar-price">دلار به ریال</label>
+              <input
+                class="user-dollar input-style"
+                type="number"
+                id="dollar-price"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- result section and btn -->
+      <div class="result">
+        <button type="submit" class="submit-btn">نمایش</button>
+        <h2 class="result-price"></h2>
+      </div>
+    </div>
+
+    <script src=""></script>
+  </body>
+</html>

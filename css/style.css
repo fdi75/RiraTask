@@ -1,0 +1,150 @@
+
+/* حذف باتن های افزایش و کاهش اینپوت ها */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* فونت فارسی */
+
+@font-face {
+  font-family: "Afra";
+  src: url(../font/Afra-Light.ttf) format("truetype");
+}
+
+/* body style----- */
+
+body {
+  font-family: "Afra";
+  margin: 0;
+  color: white;
+  background: linear-gradient(
+    to bottom right,
+    #01122b,
+    #1b4a48
+  );
+  background-repeat: no-repeat;
+}
+
+/* A style similar to inputs */
+
+.input-style {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+  color: rgb(216, 216, 216);
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.116);
+}
+
+.input-style:focus {
+  box-shadow: 0 0 10px 3px rgba(190, 239, 252, 0.556);
+  outline: none;
+}
+
+
+/* first container */
+
+.container {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+  width: 70vw;
+}
+
+/* get dollar rate section */
+
+.getPrice {
+  display: grid;
+  text-align: end;
+  justify-content: end;
+  width: 32rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.user-rate {
+  width: 15rem;
+  margin: auto;
+}
+
+/* 
+.user-rate::placeholder {
+  color: rgba(255, 255, 255, 0.478);
+} */
+
+.default-rate {
+  line-height: 0px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: rgb(255, 204, 0);
+}
+
+/* dollar rial section */
+
+.change-container {
+  display: grid;
+    border: .5px solid rgba(168, 235, 255, 0.386);
+    text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+/* dollar and rial get price box */
+.box-style{
+  padding: 2rem;
+  text-align: end;
+  display: grid;
+  align-items: center;
+}
+
+/* -------result section style */
+
+.result {
+  margin: 2rem auto;
+  min-height: 25vh;
+  text-align: center;
+}
+
+/* btn */
+.submit-btn {
+  font-size: 1.4rem;
+  padding: 5px 40px;
+  border: none;
+  font-family: "Afra";
+  color: rgb(253, 253, 253);
+  font-weight: 700;
+  background-color: #08182F;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .25s;
+  margin-bottom: 2rem;
+}
+
+.submit-btn:hover {
+  box-shadow:  0 0 10px 3px #08182F;
+}
+
+.result-price {
+  /* font-family: sans-serif; */
+  padding: 10px 40px;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
