@@ -141,6 +141,16 @@ label {
   align-items: center;
 }
 
+
+@media screen and (max-width: 768px) {
+
+  .box-style *{
+    width: 20rem;
+    text-align: center;
+  }
+  
+}
+
 /* -------result section style */
 
 .result {
@@ -152,7 +162,7 @@ label {
 /* btn */
 .submit-btn {
   font-size: 1.4rem;
-  padding: 5px 40px;
+  padding: 5px 50px;
   border: none;
   font-family: "Afra";
   color: rgb(253, 253, 253);
